@@ -8,10 +8,13 @@ El proposito del proyecto es realizar notificacines push desde una aplicacion Fr
 // Instalar todas las dependencias del package.json
 npm install
 // Instalar de manera global
-npm install -g nodemon
 npm install -g pm2
-pm2 start app.js
+// Iniciar con PM2
+pm2 start ecosystem.config.js
 pm2 list
+pm2 stop [id]
+pm2 restart [id]
+pm2 delete [id]
 ```  
 
 ## Uso del Repositorio Github
