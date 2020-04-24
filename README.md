@@ -1,31 +1,30 @@
 # App SocketIO
 Aplicación nodejs + express + socket.io + babel + ES6 para realizar procesos por websocket
 
-El proposito del proyecto es realizar notificacines push desde una aplicacion Frontend con Backend.
+El proposito del proyecto es realizar notificacines push desde una aplicacion Frontend o Backend.
 
 ## Instalación
 ``` bash
 // Instalar todas las dependencias del package.json
 npm install
-// Instalar de manera global
+// Instalar PM2 de manera global
 npm install -g pm2
-// Iniciar con PM2
+```  
+
+## Modo de Uso
+``` bash
+// Iniciar con nodemon para LOCAL
+npm run watch
+
+// Iniciar con PM2 para PRODUCCION
 pm2 start ecosystem.config.js
 pm2 list
 pm2 stop [id]
 pm2 restart [id]
 pm2 delete [id]
-```  
-
-## Uso del Repositorio Github
-``` bash
-// Ejecutar este comando para realizar el deploy de la app nodejs con socketIO
-npm run start 
-// Ejecutar este comando para realizar el deploy de la app nodejs con socketIO y realizar cambios a su vez
-npm run watch
 ```
 
-## Ejemplos para SocketIO con NodeJS
+## Ejemplo de eventos socketIO
 ``` bash
  // sending to sender-client only
  // enviando solo al remitente-cliente
