@@ -1,0 +1,10 @@
+node_modules
+.idea
+package-lock.json
+.env
+
+/logs/access.log
+/logs/error.log
+
+outfile.log
+error.log
